@@ -1,0 +1,436 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+:root{
+    --primary-color: rgb(11,13,23);
+    --primary-color-variant: rgb(288,214,249);
+    --color-white: rgb(255,255,255); 
+}
+
+/* ...............................Body............................... */
+
+/* body{
+    background: url(./assets/home/background-home-desktop.jpg);
+    background-size: cover;
+} 
+*{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    transition: all 500ms ease-in-out;
+    /* font-family: 'Bellefair', serif; 
+
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,500;1,600;1,700;1,800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-main);
+  text-decoration: none;
+  list-style-type: none;
+  scroll-behavior: smooth;
+}
+:root {
+  --color-bg-primary: #fcde67;
+  --color-bg-variant: #917b23;
+  --text-color: #030e12;
+  --color-primary: #ef9273;
+  --color-primary-variant: #fff;
+  --color-small-text: #29738e;
+  --font-main: 'Poppins', sans-serif;
+  --container-width-1g: 75%;
+  --container-width-mg: 86%;
+  --container-width-ms: 90%;
+  --transition: 500ms all ease;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.che {
+  display: flex;
+}
+.secc {
+  display: flex;
+  margin-top: 2rem;
+}
+.tre {
+  display: flex;
+  margin-top: 2rem;
+}
+.ad {
+  display: flex;
+  margin-top: 2rem;
+}
+.chairman {
+  display: flex;
+  gap: 4em;
+  margin-left: 8em;
+}
+.chairman img {
+  width: 100px;
+  height: 120px;
+  border-radius: 1.5rem;
+}
+.vice_chairman {
+  display: flex;
+  gap: 4em;
+  margin-left: 9em;
+}
+.vice_chairman img {
+  width: 100px;
+  height: 120px;
+  border-radius: 1.5rem;
+}
+.sec_gen {
+  display: flex;
+  gap: 4em;
+  margin-left: 8em;
+}
+.sec_gen img {
+  width: 100px;
+  height: 120px;
+  border-radius: 1.5rem;
+}
+.sec {
+  display: flex;
+  gap: 4em;
+  margin-left: 8em;
+}
+.sec img {
+  width: 100px;
+  height: 120px;
+  border-radius: 1.5rem;
+}
+.treasurer {
+  display: flex;
+  gap: 4em;
+  margin-left: 8em;
+}
+.treasurer img {
+  width: 100px;
+  height: 120px;
+  border-radius: 1.5rem;
+}
+.vice_treasurer {
+  display: flex;
+  gap: 4em;
+  margin-left: 8.5em;
+}
+.vice_treasurer img {
+  width: 100px;
+  height: 120px;
+  border-radius: 1.5rem;
+}
+.advisor {
+  display: flex;
+  gap: 4em;
+  margin-left: 8em;
+}
+.advisor img {
+  width: 100px;
+  height: 120px;
+  border-radius: 1.5rem;
+}
+.admin {
+  display: flex;
+  gap: 4em;
+  margin-left: 9.5em;
+}
+.admin img {
+  width: 100px;
+  height: 120px;
+  border-radius: 1.5rem;
+}
+.membership {
+  margin-top: 4rem;
+  margin-left: 8rem;
+}
+
+.container {
+  width: var(--container-width-1g);
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+h1 {
+  font-size: 2.5rem;
+}
+section {
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+section > h2 {
+  text-align: center;
+  color: var(--text-color);
+}
+section > h5 {
+  text-align: center;
+  color: var(--color-small-text);
+}
+button {
+  width: fit-content;
+  z-index: 2;
+  padding: 0.7rem;
+  border: 0.1rem solid var(--color-primary);
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  position: relative;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+button::after {
+  content: '';
+  background: var(--color-primary);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  transition: var(--transition);
+  width: 100%;
+  height: 0%;
+}
+button:hover::after {
+  height: 102%;
+}
+button:hover {
+  color: var(--color-primary-variant);
+}
+/*end of global variables*/
+/*nav section*/
+nav {
+  margin-top: 2rem;
+  /* margin-left: 2rem; */
+  display: flex;
+  justify-content: space-between;
+  background-color: skyblue;
+  padding: 1rem;
+  /* margin-right: 2rem; */
+}
+.right_part ul li a:hover {
+  color: crimson;
+}
+i.fa-bars {
+  display: none;
+}
+i.fa-times {
+  display: none;
+  z-index: 20;
+}
+.right_part ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+.right_part ul li a {
+  position: relative;
+  /* color: rgba(255, 255, 255, 0.322); */
+  color: black;
+  padding-bottom: 1rem;
+}
+
+a.active {
+  border-bottom: 2px solid #fff;
+}
+
+.form-wrapper {
+  /* margin-top: 3rem; */
+  margin: 0 7rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.neo_mgomeni {
+  display: none;
+}
+/* .form-wrapper h5{
+     color: var(--color-small-text); 
+  } */
+.form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+}
+.form-wrapper form button {
+  left: 45%;
+  width: 5rem;
+}
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+  color: gray;
+}
+label {
+  display: flex;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 0.6rem;
+  cursor: text;
+  transition: 0.5s;
+}
+.input-group input {
+  width: 100%;
+  outline: none;
+  border: 0.1rem solid black;
+  padding: 0.6rem;
+}
+textarea {
+  width: 100%;
+
+  outline: none;
+  border: 0.1rem solid black;
+  padding: 0.6rem;
+}
+
+input:focus ~ label {
+  top: -35px;
+  font-size: 1rem;
+}
+textarea:focus ~ label {
+  top: -35px;
+  font-size: 1rem;
+}
+.form-wrapper h3 {
+  margin-top: 3rem;
+}
+
+.kalimah {
+  margin-top: 5rem;
+  margin-left: 8rem;
+  margin-right: 2rem;
+}
+.social-links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+  margin-right: 2rem;
+}
+.social-links .fa-youtube {
+  color: red;
+}
+.social-links a i {
+  font-size: 30px;
+}
+.footer-copyright {
+  margin-top: 2rem;
+  text-align: center;
+}
+.bottom {
+  background-color: aquamarine;
+  margin-top: 6rem;
+  padding: 0.2rem;
+}
+
+/*..................media  for tablets...........*/
+@media screen and (max-width: 1024px) {
+  body {
+    background: url(./assets/home/background-home-tablet.jpg);
+    background-size: cover;
+  }
+  nav span {
+    width: 0;
+    top: 3.5rem;
+    background: gray;
+  }
+  .homecontainer__wrapper {
+    height: fit-content;
+    text-align: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+/*................media queries  for mobiles...........*/
+@media screen and (max-width: 600px) {
+  body {
+    background: url(./assets/home/background-home-mobile.jpg);
+    background-size: cover;
+  }
+  .neo_mgomeni h1 {
+    font-size: 2rem;
+  }
+  .neo_mgomeni {
+    display: block;
+  }
+  .chairman,
+  .vice_chairman,
+  .sec_gen,
+  .sec,
+  .treasurer,
+  .vice_treasurer,
+  .advisor,
+  .admin {
+    margin-left: 2rem;
+    gap: 1rem;
+    font-size: 13px;
+    align-items: center;
+  }
+  .che {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .secc {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .tre {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .right_part {
+    position: absolute;
+    display: none;
+    height: fit;
+    margin-top: -1rem;
+    z-index: 10;
+    left: 0;
+    padding: 2rem;
+    background-color: skyblue;
+  }
+  .ad {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .right_part ul {
+    height: 30%;
+    margin-top: 3rem;
+    flex-direction: column;
+  }
+
+  i.fa-bars {
+    display: block;
+    margin-right: 2rem;
+    font-size: 2rem;
+    /* color: var(--color-white); */
+    color: black;
+    cursor: pointer;
+  }
+  i.fa-times {
+    z-index: 2;
+    margin-right: 2rem;
+    font-size: 2rem;
+    /* color: var(--color-white); */
+    color: black;
+    z-index: 12;
+    cursor: pointer;
+  }
+  .kalimah {
+    margin-left: 2rem;
+  }
+}

@@ -1,0 +1,227 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+:root{
+    /* --primary-color: rgb(11,13,23);
+    --primary-color-variant: rgb(288,214,249);
+    --color-white: rgb(255,255,255);   
+}*/
+
+/* ...............................Body............................... */
+
+* {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  transition: all 500ms ease-in-out;
+  /* font-family: 'Bellefair', serif; */
+}
+nav {
+  margin-top: 2rem;
+  /* margin-left: 2rem; */
+  display: flex;
+  justify-content: space-between;
+  background-color: skyblue;
+  padding: 1rem;
+  /* margin-right: 2rem; */
+}
+.left_part {
+  margin-right: 33rem;
+}
+.right_part ul li a:hover {
+  color: crimson;
+}
+section {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  flex-direction: column;
+}
+.address_img {
+  display: flex;
+  gap: 8rem;
+}
+.address_img img {
+  width: 300px;
+  height: 200px;
+}
+.history {
+  margin-top: 3rem;
+  margin-right: 3rem;
+}
+.constitution {
+  margin-top: 3rem;
+}
+.kalimah {
+  margin-top: 3rem;
+}
+
+.social-links {
+  margin-top: 4rem;
+}
+.social-links .fa-youtube {
+  color: red;
+}
+.social-links a i {
+  font-size: 30px;
+}
+i.fa-bars {
+  display: none;
+}
+i.fa-times {
+  display: none;
+  z-index: 20;
+}
+/* .left_part{
+    margin-right: 15rem;
+
+} */
+.right_part ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+.right_part ul li a {
+  position: relative;
+  /* color: rgba(255, 255, 255, 0.322); */
+  color: black;
+  padding-bottom: 5px;
+}
+
+a.active {
+  border-bottom: 2px solid #fff;
+}
+.neo_mgomeni {
+  display: none;
+}
+.explore {
+  margin-top: 3rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.explore button {
+  width: 11rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.explore button:hover {
+  outline: 4rem solid rgba(255, 255, 255, 0.3);
+}
+
+.kalimah {
+  margin-top: 5rem;
+  margin-left: 4rem;
+  margin-right: 2rem;
+}
+.social-links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+  margin-right: 2rem;
+}
+.footer-copyright {
+  text-align: center;
+  margin-top: 2rem;
+}
+.bottom {
+  background-color: aquamarine;
+  margin-top: 6rem;
+  padding: 0.2rem;
+}
+
+/*..................media  for tablets...........*/
+@media screen and (max-width: 1024px) {
+  body {
+    background: url(./assets/home/background-home-tablet.jpg);
+    background-size: cover;
+  }
+  nav span {
+    width: 0;
+    top: 3.5rem;
+    background: gray;
+  }
+  .homecontainer__wrapper {
+    height: fit-content;
+    text-align: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+/*................media queries  for mobiles...........*/
+@media screen and (max-width: 600px) {
+  body {
+    background: url(./assets/home/background-home-mobile.jpg);
+    background-size: cover;
+    width: 100%;
+  }
+  section {
+    margin-left: 2.5rem;
+  }
+  .left_part {
+    margin-right: 0;
+  }
+  .left_part h1 {
+    font-size: 1.5rem;
+  }
+  .left_part p {
+    font-size: 10px;
+  }
+  .img_wrapper {
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .address {
+    text-align: center;
+  }
+  .address_img {
+    flex-direction: column;
+    align-items: center;
+  }
+  .right_part {
+    position: absolute;
+    display: none;
+    height: fit;
+    margin-top: -1rem;
+    z-index: 10;
+    left: 0;
+    padding: 2rem;
+    background-color: skyblue;
+  }
+  .right_part ul {
+    height: 30%;
+    margin-top: 3rem;
+    flex-direction: column;
+  }
+
+  i.fa-bars {
+    display: block;
+    margin-right: 2rem;
+    font-size: 2rem;
+    /* color: var(--color-white); */
+    color: black;
+    cursor: pointer;
+  }
+  .neo_mgomeni {
+    display: block;
+  }
+  i.fa-times {
+    z-index: 2;
+    margin-right: 2rem;
+    font-size: 2rem;
+    /* color: var(--color-white); */
+    color: black;
+    z-index: 12;
+    cursor: pointer;
+  }
+}
