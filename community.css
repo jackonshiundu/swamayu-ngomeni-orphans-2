@@ -64,6 +64,12 @@ section {
   margin-top: 2rem;
   margin-left: 2rem;
 }
+a {
+  cursor: pointer;
+}
+a button {
+  cursor: pointer;
+}
 .headings {
   margin-top: 1rem;
   background-color: #fff800;
@@ -180,7 +186,16 @@ section h1 {
   margin-top: 6rem;
   padding: 0.2rem;
 }
-
+.donate_button {
+  background-color: #000;
+  color: gold;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
 /*..................media  for tablets...........*/
 @media screen and (max-width: 1024px) {
   body {

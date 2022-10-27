@@ -30,6 +30,12 @@ body {
     list-style-type: none;
     scroll-behavior: smooth; */
 }
+a {
+  cursor: pointer;
+}
+a button {
+  cursor: pointer;
+}
 nav {
   margin-top: 2rem;
   /* margin-left: 2rem; */
@@ -112,6 +118,7 @@ section {
   display: inline-block;
   font-size: 20px;
 }
+
 @keyframes textclip {
   to {
     background-position: 200% center;
@@ -156,6 +163,17 @@ section {
   flex-direction: column;
   align-items: center;
 }
+.donate_button {
+  background-color: #000;
+  color: gold;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
 .crypto {
   color: gold;
   background-color: black;
@@ -251,24 +269,7 @@ section {
 .cash_outflow {
   gap: 0.5rem;
 }
-.playing_video1 {
-  /* margin-top: 3rem; */
-  width: clamp(400px, 70vw, 800px);
-  overflow: hidden;
-  margin-left: 9rem;
-  margin-top: -7rem;
-  text-align: center;
-  /* border: 2px solid blue;  */
-  padding: 1rem;
-  margin-top: 6rem;
-  height: fit-content;
-}
-.playing_video1 video {
-  width: 100%;
-  border-radius: 2rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  /* border: 2px solid blue;  */
-}
+
 .explore {
   margin-top: 3rem;
   flex: 1;
@@ -314,7 +315,18 @@ section {
   margin-top: 6rem;
   padding: 0.2rem;
 }
-
+.playing_wrapper {
+  width: clamp(200px 50vw 600px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.playing_wrapper > h3 {
+  margin-top: 3rem;
+}
+.playing_wrapper video {
+  width: 100%;
+}
 /*..................media  for tablets...........*/
 @media screen and (max-width: 1024px) {
   body {
@@ -364,6 +376,7 @@ section {
     margin-top: 3rem;
     flex-direction: column;
   }
+
   .donations {
     font-size: 13px;
   }
@@ -389,18 +402,7 @@ section {
   .paypal > h3:last-child {
     letter-spacing: 0;
   }
-  .playing_video1 {
-    width: clamp(400px, 70vw, 800px);
-    overflow: hidden;
-    margin-left: -2.5rem;
-    margin-top: -7rem;
-    text-align: center;
-    /* border: 2px solid blue;  */
-    padding: 1rem;
-    margin-top: 6rem;
-    overflow: hidden;
-    height: fit-content;
-  }
+
   .mpesa,
   .bank_acc {
     margin-right: 2rem;

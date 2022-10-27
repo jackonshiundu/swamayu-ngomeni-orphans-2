@@ -17,6 +17,12 @@
   transition: all 500ms ease-in-out;
   /* font-family: 'Bellefair', serif; */
 }
+a {
+  cursor: pointer;
+}
+a button {
+  cursor: pointer;
+}
 nav {
   margin-top: 2rem;
   /* margin-left: 2rem; */
@@ -26,9 +32,7 @@ nav {
   padding: 1rem;
   /* margin-right: 2rem; */
 }
-.left_part {
-  margin-right: 33rem;
-}
+
 .right_part ul li a:hover {
   color: crimson;
 }
@@ -138,7 +142,16 @@ a.active {
   margin-top: 6rem;
   padding: 0.2rem;
 }
-
+.donate_button {
+  background-color: #000;
+  color: gold;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
 /*..................media  for tablets...........*/
 @media screen and (max-width: 1024px) {
   body {
@@ -180,6 +193,16 @@ a.active {
     width: 95%;
     margin: 0 auto;
     overflow: hidden;
+  }
+  .donate_button {
+    background-color: #000;
+    color: gold;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
   }
   .address {
     text-align: center;

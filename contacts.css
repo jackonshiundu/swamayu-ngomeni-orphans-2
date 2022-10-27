@@ -74,6 +74,13 @@
   height: 120px;
   border-radius: 1.5rem;
 }
+a {
+  cursor: pointer;
+}
+a button {
+  cursor: pointer;
+}
+
 .vice_chairman {
   display: flex;
   gap: 4em;
@@ -238,7 +245,6 @@ i.fa-times {
   position: relative;
   /* color: rgba(255, 255, 255, 0.322); */
   color: black;
-  padding-bottom: 1rem;
 }
 
 a.active {
@@ -298,7 +304,16 @@ textarea {
   border: 0.1rem solid black;
   padding: 0.6rem;
 }
-
+.donate_button {
+  background-color: #000;
+  color: gold;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
 input:focus ~ label {
   top: -35px;
   font-size: 1rem;
